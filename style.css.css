@@ -1,0 +1,77 @@
+p {color : rgb(180, 99, 99); font-size: 1.3rem; font-family: Impact; background-color: rgb(94, 87, 87) (74, 35, 35);border: solid black  2px; text-align: center;}
+h1, h2, h3, h4, h5,h6 {color: rgb(133, 117, 117); font-size: 1.6; font-family: 'Times New Roman', Times, serif; padding-top: 2px; padding-bottom: 5px;text-align: right;}
+
+body { background-color: rgb(99, 97, 97);}
+a:link {
+    color: red; 
+  }
+  
+  a:visited {
+    color: rgb(67, 66, 66);
+  }
+  
+
+  a:hover {
+    color: hotpink;
+  }
+  
+  a:active {
+    color: blue;}
+    .red {
+        color: rgb(101, 88, 88);
+      }
+      
+      .yellow-bg {
+        background: #ffa;
+      }
+      
+      .fancy {
+        font-weight: bold;
+        text-shadow: 4px 4px 3px #77f;
+      }
+
+      a {
+        color: blue;
+      }
+      
+      
+      a[href^="#task"] {
+        background-color: gold;
+      }
+      
+     
+      a[href*="#requirements"] {
+        background-color: silver;
+      }
+      
+    
+      a[href*="#submission" i] {
+        background-color: gold;
+      }
+      
+      
+      a[href*="#grading" s] {
+        background-color: silver;
+      }
+      
+     
+      a[href$="#deadline"] {
+        background-color: gold;
+      }
+      
+      
+      a[href^="#signin"] {
+        background-color: silver;
+      }
+
+      #identified {
+        background-color: rgb(13, 32, 40);
+      }
+
+      #bannerimage {
+        width: 100%;
+        background-image: url(sky.jpg);
+        height: 400px;
+        background-color: rgb(202, 180, 202);
+        background-position: center;
+      }

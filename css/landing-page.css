@@ -1,284 +1,149 @@
-@import "fonts.css";
-@import "colors.css";
+<!doctype html>
+<html class="no-js" lang="">
 
-#header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: var(--rosewater-transparent);
-  z-index: 10;
-  max-height: 100px;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Komila Nassyrova</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-#icon {
-  padding-left: 1rem;
-  font-family: 'Merriweather-BoldItalic', serif;
-  font-size: 2rem;
-}
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-#menu-container {
-  display: flex;
-  justify-content: flex-end;
-}
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-#menu {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  font-family: 'Merriweather-Regular', serif;
-  list-style: none;
-}
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Styles for my main landing page -->
+  <link rel="stylesheet" href="css/landing-page.css">
 
-#menu li {
-  margin-left: 2rem;
-}
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Used for email icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-#menu li:last-child {
-  margin-right: 2rem;
-}
+  <meta name="theme-color" content="#fafafa">
+</head>
 
-#menu li a {
-  color: var(--jet-black);
-  text-decoration: none;
-}
+<body>
 
-/* Main photo ================================================= */
-#main {
-  position: relative;
-}
+  <!-- Main part -->
+  <main>
+    <!-- Landing Page Header -->
+    <header id="header">
+      <div id="icon">
+        <a href="/">Komila Nassyrova</a>
+      </div>
+      <div id="menu-container">
+        <ul id="menu">
+          <li><a href="/pages/academics.html">Academics</a></li>
+          <li><a href="/pages/work.html">Work</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main part   -->
+    <div id="main">
+      <img src="img/7.jpg" alt="Nice photo">
+      <h1 id="main-header-text">This is Komila!</h1>
+      <p id="vertical-note">My portfolio!</p>
+    </div>
+  </main>
 
-#main img {
-  max-width: 100%;
-}
+  <div class="scrolling-header-text-wrapper" id="header-text-wrapper-1">
+    <div class="scrolling-header-text">
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+      <p>Personal and Professional Skills.</p>
+    </div>
+  </div>
 
-#main-header-text {
-  font-family: 'Merriweather-Bold', serif;
-  color: var(--yellow);
-  font-size: 8rem;
-  position: absolute;
-  top: 22%;
-  left: 20%;
-}
+  <!-- Personal and Professional Skills -->
 
-@media (max-width: 30rem) {
-  #main-header-text {
-    top: 10%;
-  }
-}
+  <div id="second-section">
+    <img src="img/personal_photo.jpg" alt="Komila">
+    <ul>
+      <li>Communication</li>
+      <li>Research</li>
+      <li>Organization and Management Skills</li>
+      <li>Analytical Skills</li>
+      <li>Leadership</li>
+      <li>Adaptability</li>
+    </ul>
+    <i class="fa fa-heart fa-spin"></i>
+  </div>
 
-#vertical-note {
-  font-family: 'Merriweather-Regular', serif;
-  font-size: 1rem;
-  position: absolute;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  top: 30%;
-  color: var(--cream);
-}
+  <div class="scrolling-header-text-wrapper" id="header-text-wrapper-2">
+    <div class="scrolling-header-text">
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+      <p>Extracurricular activities.</p>
+    </div>
+  </div>
 
-#vertical-note:hover {
-  cursor: default;
-}
+  <div id="third-section">
+    <i class="fa fa-heart fa-spin"></i>
+    <ul>
+      <li>Media and Communications Department Member, Gender Equality Club.</li>
+      <li>Ministry of Education, Student Government.</li>
+      <li>Creative Spark Case Competition 2021 2nd place winner</li>
+      <li>Event Manager, NU Association of Political Science</li>
+      <li>Mentor, Mentorship Program Fall 21</li>
+    </ul>
+    <img src="/img/4.JPG" alt="Komila">
+  </div>
 
-/* Scrolling text ============================================ */
+  <div class="scrolling-header-text-wrapper" id="header-text-wrapper-3">
+    <div class="scrolling-header-text">
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+      <p>Individual thoughts and vision.</p>
+    </div>
+  </div>
 
-.scrolling-header-text-wrapper {
-  background-color: var(--transparent);
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  top: -100px;
-  color: var(--cream);
-  font-size: 2rem;
-}
+  <div>
+    <p id="thoughts"></p>
+  </div>
 
-@media (max-width: 30rem) {
-  #header-text-wrapper-1 {
-    top: 0px;
-    color: var(--jet-black);
-  }
-}
+  <!-- Contacts -->
 
-.scrolling-header-text {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: scroll 10s linear infinite;
-}
+  <!-- Landing Page Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/academics.html">Academics</a></li>
+        <li><a href="/pages/work.html">Work</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <a href="mailto:komila.nassyrova@nu.edu.kz"><i class="fa material-icons">email</i></a>
+      <a href="https://www.linkedin.com/in/nassyrovak/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/knassyrovva/"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="legal">
+      &copy; 2023 Komila Nassyrova. All rights reserved.
+    </div>
+  </footer>
 
-.scrolling-header-text p {
-  display: inline-block;
-  margin-right: 2rem;
-}
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-@keyframes scroll {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-/* Second section ============================================= */
-#second-section {
-  font-family: 'Merriweather-Regular', serif;
-  line-height: 2rem;
-  position: relative;
-  top: -100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 80vh;
-}
-
-#second-section img {
-  border: 5px solid var(--jet-black);
-  width: 30%;
-  height: 30%;
-}
-
-#second-section ul {
-  list-style: none;
-}
-
-#second-section ul li {
-  display: block;
-  text-align: center;
-  transition: all 0.3s ease;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
-#second-section ul li:hover {
-  cursor: pointer;
-  font-size: large;
-  color: var(--jet-black-transparent)
-}
-
-#header-text-wrapper-2 {
-  color: var(--yellow);
-}
-
-/* Third section ============================================= */
-#third-section {
-  font-family: 'Merriweather-Regular', serif;
-  line-height: 2rem;
-  position: relative;
-  top: -100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 80vh;
-}
-
-#third-section img {
-  border: 5px solid var(--yellow);
-  width: 30%;
-  height: 30%;
-}
-
-#third-section ul {
-  list-style: none;
-}
-
-#third-section ul li {
-  display: block;
-  text-align: center;
-  transition: all 0.3s ease;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
-#third-section ul li:hover {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--jet-black-transparent)
-}
-
-#header-text-wrapper-3 {
-  color: var(--jet-black);
-}
-
-#thoughts {
-  font-family: 'Merriweather-Regular', serif;
-  font-size: 1.5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  line-height: 3rem;
-  color: var(--jet-black);
-}
-
-/* Footer ===================================================== */
-
-footer {
-  background-color: var(--rosewater-transparent);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-nav {
-  font-family: 'Merriweather-Regular', serif;
-  flex-shrink: 2;
-}
-
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-footer a {
-  color: var(--jet-black);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.social-icons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.social-icons a {
-  color: var(--jet-black);
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.social-icons a i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 0 5px var(--jet-black-transparent);
-}
-
-.legal {
-  font-family: 'Merriweather-Light', serif;
-  font-size: 14px;
-  color: var(--jet-black-transparent);
-  flex-shrink: 2;
-}
-
-/* ===================================================== */
+</html>

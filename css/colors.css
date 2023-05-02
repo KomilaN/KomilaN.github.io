@@ -1,0 +1,9 @@
+:root {
+  --rosewater:#E6C2BF;
+  --rosewater-transparent: rgba(230, 194, 191, 0.5);
+  --cream:#F8EFE4;
+  --yellow:#FAD02C;
+  --jet-black:#282120;
+  --jet-black-transparent: rgba(40, 33, 32, 0.5);
+  --transparent: rgba(0, 0, 0, 0);
+}
